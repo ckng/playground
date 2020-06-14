@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "serve": "cross-env NODE_ENV=development concurrently \"postcss public/tailwind.css -o public/build/tailwind.css --watch\"  \"live-server ./public\"",
-    "development": "cross-env NODE_ENV=development postcss public/tailwind.css -o public/build/tailwind.css",
-    "production": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/build/tailwind.css",
+    "serve": "cross-env NODE_ENV=development concurrently \"postcss public/styles.postcss.css -o public/build/styles.css --watch\"  \"live-server ./public\"",
+    "development": "cross-env NODE_ENV=development postcss public/styles.postcss.css -o public/build/styles.css",
+    "production": "cross-env NODE_ENV=production postcss public/styles.postcss.css -o public/build/styles.css",
     "start": "npm run serve"
   },
   "dependencies": {
